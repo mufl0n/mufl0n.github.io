@@ -17,8 +17,7 @@ $ tshark -r apdu.pcapng -T fields -e usb.capdata
 
 ## Analysing the USB payload
 
-All of this is documented in [OpenPGP-smart-card-application-3.4.pdf](OpenPGP-smart-card-application-3.4.pdf)
-(included in the challenge)
+All of this is documented in the [specifications](https://github.com/mufl0n/mufl0n.github.io/blob/main/shc/forensics/what-is-a-pin/spec.pdf) (included in the challenge)
 
 ```
 6f0b0000000055000000 00478100000002a400010e
