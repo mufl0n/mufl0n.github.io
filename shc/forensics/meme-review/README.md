@@ -247,7 +247,7 @@ private static void Main(string[] args) {}
 It tries to decrypt the 6656-byte array with all possible 1-byte XOR keys. If the output contains
 a signature, it is written to `C:\temp\legit-svc.exe`, executed, deleted and the program quits.
 
-I copied that table into a [short Python script](InstallRam.py), doing the same and
+I copied that table into [InstallRam.py](https://github.com/mufl0n/mufl0n.github.io/blob/main/shc/forensics/meme-review/InstallRam.py) script, doing the same and
 got the output file.
 
 ## `legit_svc.exe`
