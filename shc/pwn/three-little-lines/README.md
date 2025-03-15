@@ -283,12 +283,12 @@ We expect this to work at least 1 out of 256 times (16x for the `0x*8` part of t
 
 ### One-off proof:
 
+Attach GDB to a fresh server instance and break before `sprintf()` (as described [above](#gdbsetup)):
+
 *   Connect to the server with telnet
 *   In the container, attach `gdb` to the server process (`-p`)
 *   Set a `break *three_little_lines+82` (right before `sprintf()`) and hit `c`
 *   In telnet session type the above format string. The breakpoint will hit.
-
-Attach GDB to a fresh server instance and break before `sprintf()` (as described [above](#gdbsetup))
 
 What we see now in GDB:
 
