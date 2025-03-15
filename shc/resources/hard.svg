@@ -1,0 +1,9 @@
+
+    <svg width="34px" height="15px" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+      <g>
+        <rect x="0" y="0" width="100%" height="100%" ry="4" style="fill:#c32232"/>
+        <text dominant-baseline="middle" text-anchor="middle" x="50%" y="55%" style="font-weight:bold;font-size:10px;font-family:Cantarell,Roboto,sans;fill:#ffffff">
+          <tspan>hard</tspan>
+        </text>
+      </g>
+    </svg>

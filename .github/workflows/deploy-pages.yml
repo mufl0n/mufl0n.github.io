@@ -1,0 +1,33 @@
+name: Deploy mufl0n.github.io
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+    - name: Install dependencies
+      run: sudo apt-get install pandoc
+    - name: Check out
+      uses: actions/checkout@v4
+    - name: Run the build script
+      run: bash ./build.sh git
+    - name: Upload the artifacts
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: build
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    steps:
+    - name: Deploy Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
