@@ -2,6 +2,7 @@ name: Deploy mufl0n.github.io
 on:
   push:
     branches: [main]
+  workflow_dispatch:
 
 jobs:
   build:
